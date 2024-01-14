@@ -1,0 +1,105 @@
+Start time: 2024-01-07 19:18:57.855696
+priority replay buffer is in use
+batch i:1
+batch i:2
+batch i:3
+batch i:4
+batch i:5
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.01871640793979168
+batch i:6
+<class 'Exception'>
+learning rate: 0.0008888888888888888, loss: 0.020519981160759926
+batch i:7
+<class 'Exception'>
+learning rate: 0.0005925925925925926, loss: 0.023437289521098137
+batch i:8
+<class 'Exception'>
+learning rate: 0.0008888888888888889, loss: 0.024106405675411224
+batch i:9
+<class 'Exception'>
+learning rate: 0.0013333333333333335, loss: 0.02476363256573677
+batch i:10
+<class 'Exception'>
+learning rate: 0.0013333333333333335, loss: 0.024410825222730637
+batch i:11
+<class 'Exception'>
+learning rate: 0.0013333333333333335, loss: 0.02414216846227646
+batch i:12
+<class 'Exception'>
+learning rate: 0.0013333333333333335, loss: 0.02443300373852253
+batch i:13
+<class 'Exception'>
+learning rate: 0.0013333333333333335, loss: 0.02387596294283867
+batch i:14
+<class 'Exception'>
+learning rate: 0.0013333333333333335, loss: 0.022962205111980438
+batch i:15
+<class 'Exception'>
+learning rate: 0.0013333333333333335, loss: 0.023630617186427116
+batch i:16
+<class 'Exception'>
+learning rate: 0.0013333333333333335, loss: 0.022941740229725838
+batch i:17
+<class 'Exception'>
+learning rate: 0.0013333333333333335, loss: 0.022707879543304443
+batch i:18
+<class 'Exception'>
+learning rate: 0.0013333333333333335, loss: 0.022341785952448845
+batch i:19
+<class 'Exception'>
+learning rate: 0.0013333333333333335, loss: 0.022633615881204605
+batch i:20
+<class 'Exception'>
+learning rate: 0.0013333333333333335, loss: 0.02273263968527317
+batch i:21
+<class 'Exception'>
+learning rate: 0.0013333333333333335, loss: 0.022367458790540695
+batch i:22
+<class 'Exception'>
+learning rate: 0.0013333333333333335, loss: 0.022557910531759262
+batch i:23
+<class 'Exception'>
+learning rate: 0.0013333333333333335, loss: 0.022438937798142433
+batch i:24
+<class 'Exception'>
+learning rate: 0.0013333333333333335, loss: 0.022174078971147537
+batch i:25
+<class 'Exception'>
+learning rate: 0.0013333333333333335, loss: 0.02241336926817894
+batch i:26
+<class 'Exception'>
+learning rate: 0.0013333333333333335, loss: 0.022121580317616463
+batch i:27
+<class 'Exception'>
+learning rate: 0.0013333333333333335, loss: 0.022224148735404015
+batch i:28
+<class 'Exception'>
+learning rate: 0.0013333333333333335, loss: 0.021640874445438385
+batch i:29
+<class 'Exception'>
+learning rate: 0.0013333333333333335, loss: 0.02224532514810562
+batch i:30
+<class 'Exception'>
+learning rate: 0.0013333333333333335, loss: 0.0217595137655735
+current self-play batch: 30
+Traceback (most recent call last):
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 402, in <module>
+    else:
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 311, in train
+    self.save_checkpoint('current_policy')
+  File "/mnt/nas/home/huangyixin/AI/game.py", line 402, in policy_evaluate
+    winner, pos = self.start_play(current_mcts_player,
+  File "/mnt/nas/home/huangyixin/AI/game.py", line 339, in start_play
+    move, _ = player_in_turn.get_action(self.board)
+  File "/mnt/nas/home/huangyixin/AI/mcts_alphaZero.py", line 203, in get_action
+    moves, move_probs = self.mcts.get_move_and_probs(board, temp)
+  File "/mnt/nas/home/huangyixin/AI/mcts_alphaZero.py", line 158, in get_move_and_probs
+    self._playout(state_copy)
+  File "/mnt/nas/home/huangyixin/AI/mcts_alphaZero.py", line 122, in _playout
+    action, node = node.select(self._c_puct)
+  File "/mnt/nas/home/huangyixin/AI/mcts_alphaZero.py", line 54, in select
+    return max(self._children.items(),
+  File "/mnt/nas/home/huangyixin/AI/mcts_alphaZero.py", line 55, in <lambda>
+    key=lambda act_node: act_node[1].get_value(c_puct))
+KeyboardInterrupt

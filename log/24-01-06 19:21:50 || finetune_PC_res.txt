@@ -1,0 +1,62 @@
+Start time: 2024-01-06 19:21:50.384021
+priority replay buffer is in use
+batch i:1
+batch i:2
+batch i:3
+batch i:4
+batch i:5
+batch i:6
+learning rate: 0.0013333333333333333, loss: 2.512636661529541
+batch i:7
+learning rate: 0.0008888888888888888, loss: 2.1638023853302
+batch i:8
+learning rate: 0.0005925925925925926, loss: 2.1909005641937256
+batch i:9
+learning rate: 0.0003950617283950617, loss: 2.0602540969848633
+batch i:10
+learning rate: 0.0003950617283950617, loss: 2.288127899169922
+batch i:11
+learning rate: 0.0002633744855967078, loss: 2.3885207176208496
+batch i:12
+learning rate: 0.0002633744855967078, loss: 2.296135902404785
+batch i:13
+learning rate: 0.0002633744855967078, loss: 2.364048719406128
+batch i:14
+learning rate: 0.0002633744855967078, loss: 2.4137067794799805
+batch i:15
+learning rate: 0.0002633744855967078, loss: 2.451244831085205
+batch i:16
+learning rate: 0.0002633744855967078, loss: 1.7793103456497192
+batch i:17
+Traceback (most recent call last):
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 402, in <module>
+    training_pipeline.train(game_batch_num)
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 304, in train
+    self.policy_update()
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 268, in policy_update
+    old_probs, _, _ = self.net.eval_state(state_batch)
+  File "/mnt/nas/home/huangyixin/AI/model.py", line 296, in eval_state
+    policy_logits, value_logits, value = self.net(state_batch)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/nas/home/huangyixin/AI/model.py", line 109, in forward
+    x = self.res_blocks(x)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/modules/container.py", line 139, in forward
+    input = module(input)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/nas/home/huangyixin/AI/model.py", line 59, in forward
+    ret = self.conv_block(ret)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/modules/container.py", line 139, in forward
+    input = module(input)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/modules/batchnorm.py", line 168, in forward
+    return F.batch_norm(
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/functional.py", line 2438, in batch_norm
+    return torch.batch_norm(
+RuntimeError: CUDA out of memory. Tried to allocate 86.00 MiB (GPU 0; 10.76 GiB total capacity; 9.43 GiB already allocated; 5.44 MiB free; 9.89 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

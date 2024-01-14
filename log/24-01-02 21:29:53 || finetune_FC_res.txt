@@ -1,0 +1,15 @@
+Start time: 2024-01-02 21:29:53.814435
+batch i:1
+batch i:2
+batch i:3
+batch i:4
+Traceback (most recent call last):
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 379, in <module>
+    training_pipeline.train(game_batch_num)
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 281, in train
+    self.policy_update()
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 242, in policy_update
+    mini_batch, weight_batch = self.data_buffer.select(replay_beta)
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 128, in select
+    weights /= max(weights)  # Normalize for stability
+TypeError: unsupported operand type(s) for /=: 'list' and 'Tensor'

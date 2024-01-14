@@ -1,0 +1,13 @@
+Start time: 2023-12-18 01:03:34.540415
+batch i:1
+batch i:2
+Traceback (most recent call last):
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 292, in <module>
+    training_pipeline.train()
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 252, in train
+    self.policy_update()
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 233, in policy_update
+    kl_div = F.kl_div(new_probs, old_probs, reduction='batchmean').data
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/functional.py", line 2916, in kl_div
+    reduced = torch.kl_div(input, target, reduction_enum, log_target=log_target)
+TypeError: kl_div(): argument 'input' (position 1) must be Tensor, not numpy.ndarray

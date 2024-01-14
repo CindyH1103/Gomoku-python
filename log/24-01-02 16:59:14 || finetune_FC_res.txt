@@ -1,0 +1,166 @@
+Start time: 2024-01-02 16:59:14.659572
+batch i:1
+batch i:2
+batch i:3
+batch i:4
+learning rate0.0013333333333333333, loss:3.4438188076019287
+batch i:5
+learning rate0.0008888888888888888, loss:3.325361490249634
+batch i:6
+learning rate0.0005925925925925926, loss:3.14029598236084
+batch i:7
+learning rate0.0003950617283950617, loss:3.0921692848205566
+batch i:8
+learning rate0.0002633744855967078, loss:3.0880517959594727
+batch i:9
+learning rate0.0002633744855967078, loss:3.0960803031921387
+batch i:10
+learning rate0.0002633744855967078, loss:2.965505599975586
+batch i:11
+learning rate0.0002633744855967078, loss:2.9654626846313477
+batch i:12
+learning rate0.0002633744855967078, loss:2.979423999786377
+batch i:13
+learning rate0.0002633744855967078, loss:2.8653316497802734
+batch i:14
+learning rate0.0002633744855967078, loss:2.9304165840148926
+batch i:15
+learning rate0.0002633744855967078, loss:2.90289044380188
+batch i:16
+learning rate0.0002633744855967078, loss:2.888357400894165
+batch i:17
+learning rate0.0002633744855967078, loss:2.935482978820801
+batch i:18
+learning rate0.0002633744855967078, loss:2.897151470184326
+batch i:19
+learning rate0.0002633744855967078, loss:2.881193161010742
+batch i:20
+learning rate0.0002633744855967078, loss:2.885596752166748
+batch i:21
+learning rate0.0002633744855967078, loss:2.8777852058410645
+batch i:22
+learning rate0.0002633744855967078, loss:2.9187495708465576
+batch i:23
+learning rate0.0002633744855967078, loss:2.880492687225342
+batch i:24
+learning rate0.0002633744855967078, loss:2.8647632598876953
+batch i:25
+learning rate0.0002633744855967078, loss:2.831810474395752
+batch i:26
+learning rate0.00039506172839506165, loss:2.941765546798706
+batch i:27
+learning rate0.00039506172839506165, loss:2.866326332092285
+batch i:28
+learning rate0.00039506172839506165, loss:2.8577470779418945
+batch i:29
+learning rate0.00039506172839506165, loss:2.8880600929260254
+batch i:30
+learning rate0.00039506172839506165, loss:2.783440589904785
+batch i:31
+learning rate0.00039506172839506165, loss:2.893706798553467
+batch i:32
+learning rate0.00039506172839506165, loss:2.8424603939056396
+batch i:33
+learning rate0.00039506172839506165, loss:2.7806429862976074
+batch i:34
+learning rate0.00039506172839506165, loss:2.9264934062957764
+batch i:35
+learning rate0.00039506172839506165, loss:2.800011157989502
+batch i:36
+learning rate0.00039506172839506165, loss:2.7886710166931152
+batch i:37
+learning rate0.00039506172839506165, loss:2.8348422050476074
+batch i:38
+learning rate0.00039506172839506165, loss:2.8419971466064453
+batch i:39
+learning rate0.00039506172839506165, loss:2.7649922370910645
+batch i:40
+learning rate0.00039506172839506165, loss:2.809323310852051
+batch i:41
+learning rate0.00039506172839506165, loss:2.808012008666992
+batch i:42
+learning rate0.00039506172839506165, loss:2.7571680545806885
+batch i:43
+learning rate0.00039506172839506165, loss:2.8822999000549316
+batch i:44
+learning rate0.00039506172839506165, loss:2.8195481300354004
+batch i:45
+learning rate0.00039506172839506165, loss:2.7748708724975586
+batch i:46
+learning rate0.00039506172839506165, loss:2.807363510131836
+batch i:47
+learning rate0.00039506172839506165, loss:2.870344638824463
+batch i:48
+learning rate0.00039506172839506165, loss:2.8178577423095703
+batch i:49
+learning rate0.00039506172839506165, loss:2.7480764389038086
+batch i:50
+learning rate0.00039506172839506165, loss:2.7383718490600586
+current self-play batch: 50
+num_playouts:1000, win: 10, lose: 0, tie:0
+average time: 188.84010710716248
+New best policy from pure MCTS
+batch i:51
+learning rate0.00039506172839506165, loss:2.830923080444336
+batch i:52
+learning rate0.00039506172839506165, loss:2.7138402462005615
+batch i:53
+learning rate0.00039506172839506165, loss:2.6556344032287598
+batch i:54
+learning rate0.00039506172839506165, loss:2.7322466373443604
+batch i:55
+learning rate0.00039506172839506165, loss:2.712523937225342
+batch i:56
+learning rate0.00039506172839506165, loss:2.714167833328247
+batch i:57
+learning rate0.0002633744855967078, loss:2.6586155891418457
+batch i:58
+learning rate0.0002633744855967078, loss:2.781451463699341
+Traceback (most recent call last):
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 379, in <module>
+    training_pipeline.train(game_batch_num)
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 278, in train
+    self.collect_selfplay_data(play_batch_size)
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 219, in collect_selfplay_data
+    _, play_data = self.game.start_self_play(self.mcts_player,
+  File "/mnt/nas/home/huangyixin/AI/game.py", line 361, in start_self_play
+    move, move_probs, _ = player.get_action(self.board,
+  File "/mnt/nas/home/huangyixin/AI/mcts_alphaZero.py", line 203, in get_action
+    moves, move_probs = self.mcts.get_move_and_probs(board, temp)
+  File "/mnt/nas/home/huangyixin/AI/mcts_alphaZero.py", line 158, in get_move_and_probs
+    self._playout(state_copy)
+  File "/mnt/nas/home/huangyixin/AI/mcts_alphaZero.py", line 126, in _playout
+    action_probs, leaf_value = self._policy(state)
+  File "/mnt/nas/home/huangyixin/AI/model.py", line 304, in policy_value_fn
+    policy_logits, _, value = self.net(current_state)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/nas/home/huangyixin/AI/model.py", line 109, in forward
+    x = self.res_blocks(x)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/modules/container.py", line 139, in forward
+    input = module(input)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/nas/home/huangyixin/AI/model.py", line 58, in forward
+    ret = self.conv_block_relu(x)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/modules/container.py", line 139, in forward
+    input = module(input)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 457, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 453, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/traceback.py", line 197, in format_stack
+    return format_list(extract_stack(f, limit=limit))
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/traceback.py", line 211, in extract_stack
+    stack = StackSummary.extract(walk_stack(f), limit=limit)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/traceback.py", line 362, in extract
+    linecache.checkcache(filename)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/linecache.py", line 72, in checkcache
+    stat = os.stat(fullname)
+KeyboardInterrupt

@@ -1,0 +1,104 @@
+Start time: 2023-12-22 16:32:34.508821
+batch i:1
+batch i:2
+batch i:3
+batch i:4
+batch i:5
+batch i:6
+learning rate0.0013333333333333333, loss:4.54918098449707
+batch i:7
+learning rate0.0008888888888888888, loss:4.595069885253906
+batch i:8
+learning rate0.0005925925925925926, loss:4.72577428817749
+batch i:9
+learning rate0.0003950617283950617, loss:4.2853899002075195
+batch i:10
+learning rate0.0002633744855967078, loss:4.109697341918945
+batch i:11
+learning rate0.0001755829903978052, loss:3.8285439014434814
+batch i:12
+learning rate0.0001755829903978052, loss:3.723803997039795
+batch i:13
+learning rate0.0001755829903978052, loss:3.5422797203063965
+batch i:14
+learning rate0.0001755829903978052, loss:3.623696804046631
+batch i:15
+learning rate0.0001755829903978052, loss:3.5776267051696777
+batch i:16
+learning rate0.0001755829903978052, loss:3.502824306488037
+batch i:17
+learning rate0.0001755829903978052, loss:3.4323410987854004
+batch i:18
+learning rate0.0001755829903978052, loss:3.4569599628448486
+batch i:19
+learning rate0.0001755829903978052, loss:3.35657000541687
+batch i:20
+learning rate0.0001755829903978052, loss:3.2984585762023926
+batch i:21
+learning rate0.0002633744855967078, loss:3.3117992877960205
+batch i:22
+learning rate0.0002633744855967078, loss:3.3242201805114746
+batch i:23
+learning rate0.0002633744855967078, loss:3.3387200832366943
+batch i:24
+learning rate0.0002633744855967078, loss:3.2720086574554443
+batch i:25
+learning rate0.0002633744855967078, loss:3.3263332843780518
+batch i:26
+learning rate0.0002633744855967078, loss:3.1934895515441895
+batch i:27
+learning rate0.0002633744855967078, loss:3.182443141937256
+batch i:28
+learning rate0.0002633744855967078, loss:3.24251651763916
+batch i:29
+learning rate0.0002633744855967078, loss:3.2057111263275146
+batch i:30
+learning rate0.0002633744855967078, loss:3.2485435009002686
+batch i:31
+learning rate0.0002633744855967078, loss:3.1728925704956055
+batch i:32
+learning rate0.0002633744855967078, loss:3.135190963745117
+batch i:33
+learning rate0.0002633744855967078, loss:3.1465930938720703
+batch i:34
+learning rate0.0002633744855967078, loss:3.1629319190979004
+batch i:35
+learning rate0.0002633744855967078, loss:3.1312496662139893
+batch i:36
+learning rate0.00039506172839506165, loss:3.0652661323547363
+batch i:37
+learning rate0.00039506172839506165, loss:3.135104179382324
+batch i:38
+learning rate0.00039506172839506165, loss:3.124774217605591
+batch i:39
+learning rate0.00039506172839506165, loss:3.1185054779052734
+batch i:40
+learning rate0.00039506172839506165, loss:3.038210153579712
+batch i:41
+learning rate0.00039506172839506165, loss:3.0973281860351562
+batch i:42
+learning rate0.00039506172839506165, loss:3.0669631958007812
+batch i:43
+learning rate0.00039506172839506165, loss:3.091409921646118
+Traceback (most recent call last):
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 378, in <module>
+    training_pipeline.train(game_batch_num)
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 278, in train
+    self.collect_selfplay_data(play_batch_size)
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 219, in collect_selfplay_data
+    _, play_data = self.game.start_self_play(self.mcts_player,
+  File "/mnt/nas/home/huangyixin/AI/game.py", line 364, in start_self_play
+    move, move_probs, _ = player.get_action(self.board,
+  File "/mnt/nas/home/huangyixin/AI/mcts_alphaZero.py", line 203, in get_action
+    moves, move_probs = self.mcts.get_move_and_probs(board, temp)
+  File "/mnt/nas/home/huangyixin/AI/mcts_alphaZero.py", line 158, in get_move_and_probs
+    self._playout(state_copy)
+  File "/mnt/nas/home/huangyixin/AI/mcts_alphaZero.py", line 122, in _playout
+    action, node = node.select(self._c_puct)
+  File "/mnt/nas/home/huangyixin/AI/mcts_alphaZero.py", line 54, in select
+    return max(self._children.items(),
+  File "/mnt/nas/home/huangyixin/AI/mcts_alphaZero.py", line 55, in <lambda>
+    key=lambda act_node: act_node[1].get_value(c_puct))
+  File "/mnt/nas/home/huangyixin/AI/mcts_alphaZero.py", line 84, in get_value
+    return self._Q + self._u
+KeyboardInterrupt

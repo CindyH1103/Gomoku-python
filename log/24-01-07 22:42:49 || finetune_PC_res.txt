@@ -1,0 +1,43 @@
+Start time: 2024-01-07 22:42:49.016265
+priority replay buffer is in use
+batch i:1
+Traceback (most recent call last):
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 405, in <module>
+    device = torch.device('cpu')
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 304, in train
+    filename_best = "best_policy" + "_" + exp_name + "_" + model_type + ".model"
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 241, in collect_selfplay_data
+    """collect self-play data for training"""
+  File "/mnt/nas/home/huangyixin/AI/game.py", line 361, in start_self_play
+    move, move_probs, _ = player.get_action(self.board,
+  File "/mnt/nas/home/huangyixin/AI/mcts_alphaZero.py", line 203, in get_action
+    moves, move_probs = self.mcts.get_move_and_probs(board, temp)
+  File "/mnt/nas/home/huangyixin/AI/mcts_alphaZero.py", line 158, in get_move_and_probs
+    self._playout(state_copy)
+  File "/mnt/nas/home/huangyixin/AI/mcts_alphaZero.py", line 126, in _playout
+    action_probs, leaf_value = self._policy(state)
+  File "/mnt/nas/home/huangyixin/AI/model.py", line 304, in policy_value_fn
+    policy_logits, _, value = self.net(current_state)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/nas/home/huangyixin/AI/model.py", line 109, in forward
+    x = self.res_blocks(x)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/modules/container.py", line 139, in forward
+    input = module(input)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/nas/home/huangyixin/AI/model.py", line 59, in forward
+    ret = self.conv_block(ret)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/modules/container.py", line 139, in forward
+    input = module(input)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 457, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 453, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+KeyboardInterrupt

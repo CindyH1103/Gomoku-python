@@ -1,0 +1,21 @@
+Start time: 2023-12-28 23:18:34.085756
+batch i:1
+batch i:2
+batch i:3
+batch i:4
+batch i:5
+batch i:6
+batch i:7
+batch i:8
+batch i:9
+batch i:10
+Traceback (most recent call last):
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 378, in <module>
+    training_pipeline.train(game_batch_num)
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 281, in train
+    self.policy_update()
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 250, in policy_update
+    loss = self.train_step(
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 343, in train_step
+    loss += self.fc_ratio * fc_loss
+RuntimeError: The size of tensor a (512) must match the size of tensor b (64) at non-singleton dimension 1

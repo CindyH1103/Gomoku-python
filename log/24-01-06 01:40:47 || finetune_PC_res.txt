@@ -1,0 +1,278 @@
+Start time: 2024-01-06 01:40:47.731099
+priority replay buffer is in use
+batch i:1
+batch i:2
+batch i:3
+batch i:4
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.01852467656135559
+batch i:5
+<class 'Exception'>
+learning rate: 0.0008888888888888888, loss: 0.022455677390098572
+batch i:6
+<class 'Exception'>
+learning rate: 0.0008888888888888888, loss: 0.02565571293234825
+batch i:7
+<class 'Exception'>
+learning rate: 0.0008888888888888888, loss: 0.026997990906238556
+batch i:8
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.02741510421037674
+batch i:9
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.027242884039878845
+batch i:10
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.025973444804549217
+batch i:11
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.025464855134487152
+batch i:12
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.024898020550608635
+batch i:13
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.02415984869003296
+batch i:14
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.024273118004202843
+batch i:15
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.023839235305786133
+batch i:16
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.02374153956770897
+batch i:17
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.0235336571931839
+batch i:18
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.023425273597240448
+batch i:19
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.022586639970541
+batch i:20
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.02297457680106163
+current self-play batch: 20
+num_playouts:1000, win: 9, lose: 1, tie:0
+average time: 237.6558651447296
+New best policy from pure MCTS
+batch i:21
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.02311982959508896
+batch i:22
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.022983182221651077
+batch i:23
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.02180475741624832
+batch i:24
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.02209617756307125
+batch i:25
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.0221403855830431
+batch i:26
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.02226249873638153
+batch i:27
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.02177794650197029
+batch i:28
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.021553553640842438
+batch i:29
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.0217441339045763
+batch i:30
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.022036228328943253
+batch i:31
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.021836522966623306
+batch i:32
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.021870937198400497
+batch i:33
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.021222833544015884
+batch i:34
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.021635424345731735
+batch i:35
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.02193952538073063
+batch i:36
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.021251309663057327
+batch i:37
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.02088133618235588
+batch i:38
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.021466564387083054
+batch i:39
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.021643970161676407
+batch i:40
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.022000493481755257
+current self-play batch: 40
+num_playouts:1000, win: 5, lose: 5, tie:0
+average time: 600.8708600521088
+batch i:41
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.02151535637676716
+batch i:42
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.021205728873610497
+batch i:43
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.02203962579369545
+batch i:44
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.021818025037646294
+batch i:45
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.02135675773024559
+batch i:46
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.021502278745174408
+batch i:47
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.02143305167555809
+batch i:48
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.021828461438417435
+batch i:49
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.02160751447081566
+batch i:50
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.021332181990146637
+batch i:51
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.020951546728610992
+batch i:52
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.0216127447783947
+batch i:53
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.02154320478439331
+batch i:54
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.02123011276125908
+batch i:55
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.021563339978456497
+batch i:56
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.02146206423640251
+batch i:57
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.02141978219151497
+batch i:58
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.02158835530281067
+batch i:59
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.021238215267658234
+batch i:60
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.021806389093399048
+current self-play batch: 60
+num_playouts:1000, win: 8, lose: 2, tie:0
+average time: 223.09928572177887
+batch i:61
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.021476397290825844
+batch i:62
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.0205896757543087
+batch i:63
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.02105092629790306
+batch i:64
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.02075835131108761
+batch i:65
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.02053205296397209
+batch i:66
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.0209493488073349
+batch i:67
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.02026672288775444
+batch i:68
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.020579244941473007
+batch i:69
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.020879609510302544
+batch i:70
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.020459316670894623
+batch i:71
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.020474592223763466
+batch i:72
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.020422467961907387
+batch i:73
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.020371176302433014
+batch i:74
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.01999451220035553
+batch i:75
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.020237598568201065
+batch i:76
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.01994975283741951
+batch i:77
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.020360823720693588
+batch i:78
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.01990126445889473
+batch i:79
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.020182810723781586
+batch i:80
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.01984677091240883
+current self-play batch: 80
+num_playouts:1000, win: 9, lose: 1, tie:0
+average time: 313.8840015172958
+batch i:81
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.02026493474841118
+batch i:82
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.019506581127643585
+batch i:83
+<class 'Exception'>
+learning rate: 0.0013333333333333333, loss: 0.019727379083633423
+Traceback (most recent call last):
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 403, in <module>
+    training_pipeline.train(game_batch_num)
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 302, in train
+    self.collect_selfplay_data(i, play_batch_size)
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 238, in collect_selfplay_data
+    _, play_data = self.game.start_self_play(self.mcts_player,
+  File "/mnt/nas/home/huangyixin/AI/game.py", line 361, in start_self_play
+    move, move_probs, _ = player.get_action(self.board,
+  File "/mnt/nas/home/huangyixin/AI/mcts_alphaZero.py", line 203, in get_action
+    moves, move_probs = self.mcts.get_move_and_probs(board, temp)
+  File "/mnt/nas/home/huangyixin/AI/mcts_alphaZero.py", line 158, in get_move_and_probs
+    self._playout(state_copy)
+  File "/mnt/nas/home/huangyixin/AI/mcts_alphaZero.py", line 122, in _playout
+    action, node = node.select(self._c_puct)
+  File "/mnt/nas/home/huangyixin/AI/mcts_alphaZero.py", line 54, in select
+    return max(self._children.items(),
+  File "/mnt/nas/home/huangyixin/AI/mcts_alphaZero.py", line 55, in <lambda>
+    key=lambda act_node: act_node[1].get_value(c_puct))
+KeyboardInterrupt

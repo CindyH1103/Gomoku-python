@@ -1,0 +1,114 @@
+Start time: 2023-12-23 00:24:44.744876
+batch i:1
+batch i:2
+batch i:3
+batch i:4
+batch i:5
+learning rate0.0013333333333333333, loss:3.7563159465789795
+batch i:6
+learning rate0.0013333333333333333, loss:3.6081857681274414
+batch i:7
+learning rate0.0013333333333333333, loss:3.5065689086914062
+batch i:8
+learning rate0.0013333333333333333, loss:3.4319419860839844
+batch i:9
+learning rate0.0013333333333333333, loss:3.2601044178009033
+batch i:10
+learning rate0.0013333333333333333, loss:3.1387429237365723
+batch i:11
+learning rate0.0013333333333333333, loss:3.300834894180298
+batch i:12
+learning rate0.0013333333333333333, loss:3.1532363891601562
+batch i:13
+learning rate0.0013333333333333333, loss:3.123945474624634
+batch i:14
+learning rate0.0013333333333333333, loss:3.210258960723877
+batch i:15
+learning rate0.0013333333333333333, loss:3.0817413330078125
+batch i:16
+learning rate0.0013333333333333333, loss:3.117374897003174
+batch i:17
+learning rate0.0013333333333333333, loss:3.158176898956299
+batch i:18
+learning rate0.0013333333333333333, loss:3.129049777984619
+batch i:19
+learning rate0.0013333333333333333, loss:3.135502815246582
+batch i:20
+learning rate0.0013333333333333333, loss:3.0938639640808105
+batch i:21
+learning rate0.0013333333333333333, loss:3.1639437675476074
+batch i:22
+learning rate0.0013333333333333333, loss:3.107694149017334
+batch i:23
+learning rate0.0013333333333333333, loss:3.1656408309936523
+batch i:24
+learning rate0.0013333333333333333, loss:3.0992889404296875
+batch i:25
+learning rate0.0013333333333333333, loss:3.1123015880584717
+batch i:26
+learning rate0.0013333333333333333, loss:3.211879253387451
+batch i:27
+learning rate0.0013333333333333333, loss:3.151921033859253
+batch i:28
+learning rate0.0013333333333333333, loss:3.143460750579834
+batch i:29
+learning rate0.0013333333333333333, loss:3.0716662406921387
+batch i:30
+learning rate0.0013333333333333333, loss:3.1546130180358887
+batch i:31
+learning rate0.0013333333333333333, loss:3.157134771347046
+batch i:32
+learning rate0.0013333333333333333, loss:3.1000874042510986
+batch i:33
+learning rate0.0013333333333333333, loss:3.1432924270629883
+batch i:34
+learning rate0.0013333333333333333, loss:3.0571000576019287
+batch i:35
+learning rate0.0013333333333333333, loss:3.147756814956665
+batch i:36
+learning rate0.0013333333333333333, loss:3.0978589057922363
+batch i:37
+learning rate0.0013333333333333333, loss:3.056008815765381
+batch i:38
+learning rate0.0013333333333333333, loss:3.0742902755737305
+batch i:39
+learning rate0.0013333333333333333, loss:3.0808849334716797
+batch i:40
+learning rate0.0013333333333333333, loss:3.0644187927246094
+batch i:41
+learning rate0.0013333333333333333, loss:3.0659399032592773
+batch i:42
+learning rate0.0013333333333333333, loss:3.1285524368286133
+batch i:43
+learning rate0.0013333333333333333, loss:3.081965923309326
+batch i:44
+learning rate0.0013333333333333333, loss:3.0571274757385254
+batch i:45
+learning rate0.0013333333333333333, loss:3.1646041870117188
+batch i:46
+learning rate0.0013333333333333333, loss:3.052089214324951
+batch i:47
+learning rate0.0013333333333333333, loss:3.0694546699523926
+batch i:48
+learning rate0.0013333333333333333, loss:3.013763666152954
+batch i:49
+learning rate0.0013333333333333333, loss:2.9755077362060547
+batch i:50
+learning rate0.0013333333333333333, loss:3.041637659072876
+current self-play batch: 50
+Traceback (most recent call last):
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 378, in <module>
+    training_pipeline.train(game_batch_num)
+  File "/mnt/nas/home/huangyixin/AI/train.py", line 303, in train
+    win_ratio = self.game.policy_compete(filename, filename_best,
+  File "/mnt/nas/home/huangyixin/AI/game.py", line 440, in policy_compete
+    pvnet2 = PolicyValueNet(self.board.width, checkpoint=checkpoint2, model_type=model_type,
+  File "/mnt/nas/home/huangyixin/AI/model.py", line 285, in __init__
+    params = torch.load(checkpoint)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/serialization.py", line 699, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/serialization.py", line 230, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/huangyixin/anaconda3/envs/gomoku/lib/python3.9/site-packages/torch/serialization.py", line 211, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'best_policy_finetune_PC_pure.model'
